@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/settingsButton"
@@ -25,11 +26,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:gravity="center"
-        android:text="@string/appDescription"
+        android:text="@string/greetUser"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -39,12 +44,100 @@
         android:layout_height="wrap_content"
         android:text="@string/appName"
         android:textColor="#00BCD4"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.121" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="292dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="297dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:weekNumberColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Average Sleep Time: 7 hours"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Sleep Score: 82/100"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="143dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
+        android:text="End Sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="143dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:text="Start Sleep"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Sleep Resources"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:text="Advanced Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="725dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

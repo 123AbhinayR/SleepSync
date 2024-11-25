@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">SleepSync</string>
     <string name="settings">Settings</string>
-    <string name="appDescription">The best app to improve your sleep and energize your monings with personalized tips and routines!</string>
+    <string name="appDescription">The best app to improve your sleep and energize your mornings with personalized tips and routines!</string>
     <string name="appName">SleepSync</string>
+    <string name="greetUser">Abhinay's Schedule:</string>
 </resources>
