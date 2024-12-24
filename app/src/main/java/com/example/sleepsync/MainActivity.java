@@ -32,5 +32,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button2 = findViewById(R.id.dataButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AdvancedData.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button3 = findViewById(R.id.resourcesButton);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SleepResources.class);
+                startActivity(intent);
+            }
+        });
     }
 }

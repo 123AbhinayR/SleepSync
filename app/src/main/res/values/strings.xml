@@ -3,5 +3,8 @@
     <string name="settings">Settings</string>
     <string name="appDescription">The best app to improve your sleep and energize your mornings with personalized tips and routines!</string>
     <string name="appName">SleepSync</string>
-    <string name="greetUser">Abhinay's Schedule:</string>
+    <string name="greetUser">Abhinay\'s Schedule:</string>
+    <string name="sleepScore">Sleep Score: 82/100</string>
+    <string name="sleep_resources">Sleep Resources</string>
+    <string name="advanced_data">Advanced Data</string>
 </resources>

@@ -92,14 +92,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
-        android:text="Sleep Score: 82/100"
+        android:text="@string/sleepScore"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/endSleepButton"
         android:layout_width="143dp"
         android:layout_height="62dp"
         android:layout_marginEnd="24dp"
@@ -109,7 +109,7 @@
         tools:layout_editor_absoluteY="614dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/startSleepButton"
         android:layout_width="143dp"
         android:layout_height="67dp"
         android:layout_marginStart="32dp"
@@ -119,25 +119,25 @@
         tools:layout_editor_absoluteY="609dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/resourcesButton"
         android:layout_width="358dp"
         android:layout_height="48dp"
-        android:layout_marginTop="48dp"
-        android:text="Sleep Resources"
+        android:layout_marginTop="32dp"
+        android:text="@string/sleep_resources"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/dataButton" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/dataButton"
         android:layout_width="358dp"
         android:layout_height="48dp"
-        android:text="Advanced Data"
+        android:text="@string/advanced_data"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="725dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="706dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
