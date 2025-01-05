@@ -25,10 +25,10 @@
 
     <ImageView
         android:id="@+id/OldSleepArt1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Article 1"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/ncoa_image" />
     <TextView
         android:id="@+id/textView30"
         android:layout_width="378dp"
@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Article 2"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/yale_image" />
     <TextView
         android:id="@+id/textView31"
         android:layout_width="378dp"
@@ -59,10 +59,10 @@
 
     <ImageView
         android:id="@+id/OldSleepArt3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Article 3"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/helpguide_image" />
     <TextView
         android:id="@+id/textView32"
         android:layout_width="378dp"
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Video 1"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/doctor_image" />
     <TextView
         android:id="@+id/textView33"
         android:layout_width="378dp"
@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Video 2"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/doctor_image" />
     <TextView
         android:id="@+id/textView34"
         android:layout_width="378dp"
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Older Adult Sleep Video 3"
-        android:src="@drawable/old_image" />
+        android:src="@drawable/toronto_image" />
     <TextView
         android:id="@+id/textView35"
         android:layout_width="378dp"

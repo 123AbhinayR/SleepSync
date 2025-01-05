@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Article 1"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/harvard_image" />
     <TextView
         android:id="@+id/textView21"
         android:layout_width="378dp"
@@ -42,10 +42,11 @@
 
     <ImageView
         android:id="@+id/MiddleAgedSleepArt2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Article 2"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/mayo_image" />
+
     <TextView
         android:id="@+id/textView22"
         android:layout_width="378dp"
@@ -59,10 +60,10 @@
 
     <ImageView
         android:id="@+id/MiddleAgedSleepArt3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Article 3"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/headspace_image" />
     <TextView
         android:id="@+id/textView23"
         android:layout_width="378dp"
@@ -88,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Video 1"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/ted_image" />
 
     <TextView
         android:id="@+id/textView24"
@@ -107,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Video 2"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/penguin_image" />
     <TextView
         android:id="@+id/textView25"
         android:layout_width="378dp"
@@ -124,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="95dp"
         android:contentDescription="Middle-Aged Sleep Video 3"
-        android:src="@drawable/adult_image" />
+        android:src="@drawable/med_image" />
     <TextView
         android:id="@+id/textView26"
         android:layout_width="378dp"
