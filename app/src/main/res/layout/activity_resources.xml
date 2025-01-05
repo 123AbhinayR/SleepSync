@@ -5,17 +5,90 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SleepResources">
+    tools:context=".SleepResourcesPageActivity">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginVertical="10dp"
         android:text="Resources"
         android:textStyle="bold"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Youth Image -->
+    <ImageView
+        android:id="@+id/youthImage"
+        android:layout_width="232dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/youth_image"
+        android:onClick="openYouthSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youth (20 and Below)"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/youthImage" />
+
+    <!-- Middle Age Image -->
+    <ImageView
+        android:id="@+id/middleAgeImage"
+        android:layout_width="240dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/adult_image"
+        android:onClick="openMiddleAgeSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/youthImage" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Middle Aged (20-50)"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleAgeImage" />
+
+    <!-- Old Image -->
+    <ImageView
+        android:id="@+id/oldImage"
+        android:layout_width="227dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/old_image"
+        android:onClick="openOldSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middleAgeImage" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Older (51 and Above)"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oldImage" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

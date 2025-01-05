@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/MiddleAgedSleepTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Middle-Aged Sleep Resources"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Articles -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Articles:"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/MiddleAgedSleepArt1"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Article 1"
+        android:src="@drawable/adult_image" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Harvard: How much sleep do you actually need?"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/MiddleAgedSleepArt2"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Article 2"
+        android:src="@drawable/adult_image" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Mayo - Adult Sleep tips: 6 steps to better sleep"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/MiddleAgedSleepArt3"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Article 3"
+        android:src="@drawable/adult_image" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Headspace: How to sleep better"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <!-- Videos -->
+    <TextView
+        android:layout_width="376dp"
+        android:layout_height="51dp"
+        android:paddingTop="23dp"
+        android:paddingBottom="8dp"
+        android:text="Videos:"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/MiddleAgedVideo1"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Video 1"
+        android:src="@drawable/adult_image" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Ted Talk - 6 tips for better sleep"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+
+    <ImageView
+        android:id="@+id/MiddleAgedVideo2"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Video 2"
+        android:src="@drawable/adult_image" />
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="How To Improve Your Sleep"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/MiddleAgedVideo3"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Middle-Aged Sleep Video 3"
+        android:src="@drawable/adult_image" />
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Doctor's Tips for Better Sleep
+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+</LinearLayout>

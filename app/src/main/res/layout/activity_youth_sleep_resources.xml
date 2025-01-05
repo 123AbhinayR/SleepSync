@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/YouthSleepTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Youth Sleep Resources"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Articles -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Articles:"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/YouthSleepArt1"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Article 1"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="NationWide: Sleep Tips for Adolescents"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/YouthSleepArt2"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Article 2"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NCBI: Teens and sleep: Why you need it and how to get enough"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt2"/>
+
+
+    <ImageView
+        android:id="@+id/YouthSleepArt3"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Article 3"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="SleepFoundation: Teens and Sleep"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt3"/>
+
+    <ImageView
+        android:id="@+id/YouthSleepArt4"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Article 4"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Hopkins: How Much Sleep Is Enough?"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt4"/>
+
+    <ImageView
+        android:id="@+id/YouthSleepArt5"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Article 5"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="CaringForKids: Why you need it and how to get enough"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt5"/>
+
+    <!-- Videos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos:"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/YouthVideo1"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Video 1"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="Why Sleep is Important for Teens?"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthVideo1"/>
+
+    <ImageView
+        android:id="@+id/YouthVideo2"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Video 2"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Ted Talk - Sleepy teens: A public health epidemic"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthVideo2"/>
+
+    <ImageView
+        android:id="@+id/YouthVideo3"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Video 3"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Sleep Tips for Teens Mayo Clinic"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthVideo3"/>
+
+    <ImageView
+        android:id="@+id/YouthVideo4"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Video 4"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="Sleep Hygiene - Tips for 13-18 Year Olds"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthVideo4"/>
+
+    <ImageView
+        android:id="@+id/YouthVideo5"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:contentDescription="Youth Sleep Video 5"
+        android:src="@drawable/youth_image" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="How to Get a Good Night's Sleep - Life Skills for Kids!"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthVideo5"/>
+</LinearLayout>

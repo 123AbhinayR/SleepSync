@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/OldSleepTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Older Adults Sleep Resources"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Articles -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Articles:"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/OldSleepArt1"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Article 1"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="NCOA: 6 Sensible Sleep Tips for Older Adults"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/OldSleepArt2"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Article 2"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Yale: Strategies for Improving Sleep in Older Adults"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/OldSleepArt3"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Article 3"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="SleepGuide: Sleep and Aging: Sleep Tips for Older Adults"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <!-- Videos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos:"
+        android:textSize="18sp"
+        android:paddingTop="23dp"
+        android:paddingBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/OldVideo1"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Video 1"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="8 Ways for Seniors to Sleep Better Tonight
+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/OldVideo2"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Video 2"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Better Sleep For Seniors (The ONLY Routine You Need!) 65+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+    <ImageView
+        android:id="@+id/OldVideo3"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:contentDescription="Older Adult Sleep Video 3"
+        android:src="@drawable/old_image" />
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:text="Tips for Better Sleep: Advice for Older Adults
+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/YouthSleepArt1"/>
+
+</LinearLayout>
