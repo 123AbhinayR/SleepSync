@@ -129,7 +129,7 @@
         android:id="@+id/dataButton"
         android:layout_width="358dp"
         android:layout_height="48dp"
-        android:text="@string/advanced_data"
+        android:text="Data and Recommendations"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
