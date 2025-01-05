@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SleepSync"
         tools:targetApi="31">
         <activity
+            android:name=".SleepResources"
+            android:exported="false" />
+        <activity
+            android:name=".AdvancedData"
+            android:exported="false" />
+        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity

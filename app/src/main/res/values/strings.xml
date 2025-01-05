@@ -7,4 +7,5 @@
     <string name="sleepScore">Sleep Score: 82/100</string>
     <string name="sleep_resources">Sleep Resources</string>
     <string name="advanced_data">Advanced Data</string>
+    <string name="average_sleep_time_7_hours">Average Sleep Time: 7 hours</string>
 </resources>

@@ -1,24 +1,32 @@
 package com.example.sleepsync;
+
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.sleepsync.R;
+
+import java.util.ArrayList;
 
 public class AdvancedData extends AppCompatActivity {
+
+    ListView listViewSleepData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_data);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_advanced_data);
+
+        listViewSleepData = findViewById(R.id.listViewSleepData);
+
+        // Get the sleep data list from the Intent
+        ArrayList<String> sleepDataList = getIntent().getStringArrayListExtra("sleepData");
+
+        // Check if sleepDataList is not null and display it in the ListView
+        if (sleepDataList != null && !sleepDataList.isEmpty()) {
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sleepDataList);
+            listViewSleepData.setAdapter(adapter);
+        }
     }
 }
