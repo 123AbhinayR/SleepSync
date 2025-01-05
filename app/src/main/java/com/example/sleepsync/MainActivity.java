@@ -57,14 +57,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Setting up other buttons
-        Button button = findViewById(R.id.settingsButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Settings.class);
-                startActivity(intent);
-            }
-        });
 
         Button button2 = findViewById(R.id.dataButton);
         button2.setOnClickListener(new View.OnClickListener() {
