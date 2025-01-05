@@ -11,10 +11,8 @@ public class SleepDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "sleep_data.db";
     private static final int DATABASE_VERSION = 1;
 
-    // Table Name
     public static final String TABLE_NAME = "sleep_data";
 
-    // Column Names
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_START_TIME = "start_time";
     public static final String COLUMN_END_TIME = "end_time";
@@ -43,7 +41,6 @@ public class SleepDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Method to insert sleep data into the database
     public void insertSleepData(String startTime, String endTime, int durationHours, int durationMinutes) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -56,7 +53,6 @@ public class SleepDatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Method to retrieve all sleep data
     public Cursor getAllSleepData() {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.query(TABLE_NAME, null, null, null, null, null, null);

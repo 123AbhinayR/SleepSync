@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Initialize views
         calendarView = findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
         buttonStartSleep = findViewById(R.id.startSleepButton);
@@ -43,11 +42,9 @@ public class MainActivity extends AppCompatActivity {
         textViewAverageSleep = findViewById(R.id.textView4); // TextView for Average Sleep
         textViewSleepScore = findViewById(R.id.textView5); // TextView for Sleep Score
 
-        // Initialize calendar
         setDate(4, 1, 2025);
         getDate();
 
-        // Calendar selection listener
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int day) {
@@ -56,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Setting up other buttons
 
         Button button2 = findViewById(R.id.dataButton);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Sleep tracker button logic
         buttonStartSleep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,30 +86,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (startTime == 0) {
-                    // If startTime is 0, show an error or return
                     Toast.makeText(MainActivity.this, "Please start sleep first", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                endTime = System.currentTimeMillis(); // End timer
+                endTime = System.currentTimeMillis();
 
-                // Calculate duration
                 long duration = endTime - startTime;
                 int hours = (int) (duration / (1000 * 60 * 60));
                 int minutes = (int) (duration / (1000 * 60)) % 60;
 
-                // Display duration
                 String durationText = "Sleep Duration: " + hours + " hours " + minutes + " minutes";
                 textViewSleepDuration.setText(durationText);
 
-                // Store sleep data entry
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
                 String sleepEntry = "Start: " + dateFormat.format(new Date(startTime)) +
                         ", End: " + dateFormat.format(new Date(endTime)) +
                         ", Duration: " + hours + "h " + minutes + "m";
                 sleepDataList.add(sleepEntry);
 
-                // (Optional) Log entries
                 for (String entry : sleepDataList) {
                     System.out.println(entry);
                 }
@@ -124,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 dbHelper.insertSleepData(dateFormat.format(new Date(startTime)),
                         dateFormat.format(new Date(endTime)), hours, minutes);
 
-                // Update the average sleep time after adding the new sleep data
                 updateAverageSleep();
             }
         });
@@ -140,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setDate(int day, int month, int year) {
         calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, month - 1);  // Adjusted for 0-based month indexing
+        calendar.set(Calendar.MONTH, month - 1);
         calendar.set(Calendar.DAY_OF_MONTH, day);
         long milli = calendar.getTimeInMillis();
         calendarView.setDate(milli);
@@ -148,21 +137,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateAverageSleep() {
         if (sleepDataList.isEmpty()) {
-            return; // No data, don't update the average
+            return;
         }
 
         long totalDuration = 0;
         for (String sleepEntry : sleepDataList) {
-            // Assuming sleepEntry is in the format: "Start: HH:mm, End: HH:mm, Duration: X hours Y minutes"
             String[] parts = sleepEntry.split(", ");
             if (parts.length >= 3) {
-                String durationPart = parts[2]; // "Duration: X hours Y minutes"
+                String durationPart = parts[2];
                 String[] durationSplit = durationPart.replace("Duration: ", "").split(" ");
                 if (durationSplit.length >= 4) {
                     try {
-                        int hours = Integer.parseInt(durationSplit[0]);  // Get hours
-                        int minutes = Integer.parseInt(durationSplit[2]); // Get minutes
-                        totalDuration += (hours * 60) + minutes; // Convert to total minutes
+                        int hours = Integer.parseInt(durationSplit[0]);
+                        int minutes = Integer.parseInt(durationSplit[2]);
+                        totalDuration += (hours * 60) + minutes;
                     } catch (NumberFormatException e) {
                         e.printStackTrace();
                         continue;
@@ -171,20 +159,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Calculate the average in minutes
         long averageDurationMinutes = totalDuration / sleepDataList.size();
         int averageHours = (int) (averageDurationMinutes / 60);
         int averageMinutes = (int) (averageDurationMinutes % 60);
 
-        // Calculate the sleep score
-        int sleepScore = (int) (averageDurationMinutes * 100) / 9; // Sleep score formula
+        int sleepScore = (int) (averageDurationMinutes * 100) / 9;
 
-        // Update the TextView with the calculated average
         String averageText = "Average Sleep Time: " + averageHours + " hours " + averageMinutes + " minutes";
         textViewAverageSleep.setText(averageText);
         textViewSleepScore.setText("Sleep Score: " + sleepScore);
 
-        // Set text colors based on sleep score
         if (sleepScore < 50) {
             textViewAverageSleep.setTextColor(getResources().getColor(R.color.red));
             textViewSleepScore.setTextColor(getResources().getColor(R.color.red));

@@ -16,7 +16,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         android:gravity="center"
-        android:text="@string/greetUser"
+        android:text="Nikhil's Schedule"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"

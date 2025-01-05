@@ -23,27 +23,22 @@ public class AdvancedData extends AppCompatActivity {
         listViewSleepData = findViewById(R.id.listViewSleepData);
         textViewRecommendations = findViewById(R.id.textViewRecommendations);
 
-        // Get the sleep data list from the Intent
         ArrayList<String> sleepDataList = getIntent().getStringArrayListExtra("sleepData");
 
-        // Check if sleepDataList is not null and display it in the ListView
         if (sleepDataList != null && !sleepDataList.isEmpty()) {
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sleepDataList);
             listViewSleepData.setAdapter(adapter);
         }
 
-        // Calculate the sleep score and set recommendations
         int sleepScore = calculateSleepScore(sleepDataList); // Calculate the sleep score based on sleep data
         setRecommendations(sleepScore);
     }
 
-    // Method to calculate sleep score based on sleep data
     private int calculateSleepScore(ArrayList<String> sleepDataList) {
         if (sleepDataList == null || sleepDataList.isEmpty()) {
             return 0; // Return a default value if no data exists
         }
 
-        // Calculate the average sleep duration
         long totalDuration = 0;
         for (String sleepEntry : sleepDataList) {
             String[] parts = sleepEntry.split(", ");
@@ -62,14 +57,12 @@ public class AdvancedData extends AppCompatActivity {
             }
         }
 
-        // Calculate average duration in minutes
         long averageDurationMinutes = totalDuration / sleepDataList.size();
         int sleepScore = (int) (averageDurationMinutes * 100) / 9; // Example sleep score formula
 
         return sleepScore;
     }
 
-    // Method to set recommendations based on the sleep score
     private void setRecommendations(int sleepScore) {
         String recommendation;
 
