@@ -64,16 +64,23 @@ public class AdvancedData extends AppCompatActivity {
     }
 
     private void setRecommendations(int sleepScore) {
+        // Declare a variable to hold the recommendation message
         String recommendation;
 
+        // Check the sleep score and assign a recommendation based on the value
         if (sleepScore > 75) {
+            // If sleep score is above 75, the recommendation is positive
             recommendation = "• Great job! Keep up the good work!";
         } else if (sleepScore >= 50 && sleepScore <= 75) {
+            // If sleep score is between 50 and 75, the recommendation suggests improvements
             recommendation = "• Try to go to bed a little earlier.\n• Consider taking a short nap during the day.";
         } else {
+            // If sleep score is below 50, the recommendation is more comprehensive and encourages significant improvement
             recommendation = "• Avoid screens before bed.\n• Avoid caffeine in the evening.\n• Try an earlier bedtime.\n• Improve your sleep routine.";
         }
 
+        // Set the recommendation message to the TextView that displays it
         textViewRecommendations.setText(recommendation);
     }
+
 }
